@@ -9,8 +9,7 @@ class MembersController < ApplicationController
   end
 
   def create()
-    byebug
-    @user   = User.new( user_params )
+     @user   = User.new( user_params )
 
     # ok to create user, member
     if @user.save_and_invite_member() && @user.create_member( member_params )
