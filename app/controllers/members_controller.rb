@@ -9,6 +9,7 @@ class MembersController < ApplicationController
   end
 
   def create()
+    byebug
     @user   = User.new( user_params )
 
     # ok to create user, member
